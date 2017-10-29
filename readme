@@ -1,0 +1,16 @@
+This implements a basic filesystem in C, the disk is being emulated by a file
+and the API for the disk has been written using the conventional file system
+and the "emufs" is just an another layer of abstaraction which is using the 
+created disk API to act like a file system.
+
+The functionality includes:
+open
+read
+write
+seek
+truncate
+
+to run it, write the program using the emufs API and compile it with
+emufs_general, the read and writes do not neccessarily happening at the block boundary
+Some of the header file defines various parameter of the system being emulated
+
